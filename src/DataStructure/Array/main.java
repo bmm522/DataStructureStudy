@@ -9,13 +9,26 @@ public class main {
 		as.addLast(20); //1
 		as.addLast(30); //2
 		as.addLast(40); //3
+		as.addLast(50); //4
+		as.addLast(60); //5
+		as.addLast(70); //6
+		as.addLast(80); //7
+
+
+		ArrayList.ListIterator li =as.listIterator();
 		
-	//	as.add(1, 15);
-	//	as.addFirst(5);
-		
-		System.out.println(as.remove(1));
-		
+		while(li.hasNext()) {
+			int number = (int)li.next();
+			if(number ==30) {
+				li.remove();
+			}
+			
+		}
 		System.out.println(as);
 	}
+		
+		
+		
+	}
 
-}
+
